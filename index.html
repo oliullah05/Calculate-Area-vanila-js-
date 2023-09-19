@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body data-theme="light"  class="w-11/12 mx-auto">
+
+                  <!-- herder section start  -->
+
+
+<header class="flex justify-between bg-blue-200 " >
+  <div>
+    <h1 class="text-3xl font-bold">Interactive </h1>
+    <p class="text-1xl italic">Geometry Genius</p>
+  </div>
+  <div class="my-auto"><button id="blog-button" class="text-3xl bg-purple-300  px-5 py-1 rounded-lg "> <a href="./blog.html">Blog</a></button></div>
+</header>
+
+<!-- all card section  -->
+
+   <main class="lg:flex">
+    <section class="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 basis-3/4 gap-2 ">
+
+                       <!-- Triangle Card -->
+
+      <div class=" all-cards  text-center p-5 shadow shadow-blue-500/40 rounded-lg">
+         <img class="block mx-auto" src="./images/triangle.png" alt="" srcset="">
+         <h1 id="triangle-tittle" class="text-3xl pt-2 fw-bold">Triangle</h1>
+         <p class="text-2xl pb-2">Area (A) = 0.5*b*h</p>
+         <div class="pb-2  ">
+            <input id="triangle-b-input" class="mb-2 input input-bordered" type="text" placeholder="b"> cm <input  id="triangle-h-input" class=" input input-bordered"type="text" placeholder="h"> cm
+          </div>
+        <div class="flex justify-center">
+          <button id="triangle-button" class="calculate-buttton text-2xl py-1 text-white px-6 bg-blue-800 rounded block ">Calculate</button>
+        </div>
+      </div>
+
+
+                               <!-- Rectangle Card -->
+
+      <div class=" all-cards    text-center p-5 shadow shadow-blue-500/40 rounded-lg">
+         <img class="block mx-auto" src="./images/rectangle.png" alt="" srcset="">
+         <h1 id="rectangle-tittle" class="text-3xl pt-6 fw-bold">Rectangle</h1>
+         <p class="text-2xl pb-2">Area (A) = w * I</p>
+         <div class="pb-2">
+            <input id="rectangle-w-input" class="mb-2 input input-bordered" type="text" placeholder="w"> cm <input id="rectangle-l-input"  class="input input-bordered"type="text" placeholder="l"> cm
+          </div>
+        <div class="flex justify-center">
+          <button id="rectangle-button" class="calculate-buttton text-2xl text-white px-6 bg-blue-800 rounded py-1 block ">Calculate</button>
+        </div>
+      </div>
+
+      
+                                <!-- Parallelogram Card -->
+
+      <div class=" all-cards    text-center p-5 shadow shadow-blue-500/40 rounded-lg">
+         <img class="block mx-auto" src="./images/parallelogram.png" alt="" srcset="">
+         <h1 id="parallelogram-tittle" class="text-3xl pt-28 fw-bold">Parallelogram</h1>
+         <p class="text-2xl pb-2 pt-3">Area (A) = b * h</p>
+         <div class="pb-2">
+          <p>b=<span id="parallelogram-base">10</span>cm, h=<span id="parallelogram-height">12</span>cm</p>
+          </div>
+        <div class="flex justify-center">
+          <button id="parallelogram-button" class="calculate-buttton text-2xl text-white px-6 bg-blue-800 rounded py-1 block ">Calculate</button>
+        </div>
+      </div>
+
+
+                               <!-- Rhombus Card -->
+
+      <div class=" all-cards    text-center p-5 shadow shadow-blue-500/40 rounded-lg">
+         <img class="block mx-auto" src="./images/rhombus.png" alt="" srcset="">
+         <h1 id="rhombus-tittle" class="text-3xl pt-2 fw-bold">Rhombus</h1>
+         <p class="text-2xl pb-2">Area (A) = 0.5 *d<sub>1</sub> *d<sub>2</sub></p>
+         <div class="pb-2">
+          <p>d<sub>1</sub>=<span id="rhombus-d1">10</span>cm, d<sub>2</sub>=<span id="rhombus-d2">12</span>cm</p>
+          </div>
+        <div class="flex justify-center">
+          <button id="rhombus-buttton" class="calculate-buttton text-2xl text-white px-6 bg-blue-800 rounded py-1 block ">Calculate</button>
+        </div>
+      </div>
+
+
+
+                                    <!-- Pentagon Card -->
+
+      <div class=" all-cards    text-center p-5 shadow shadow-blue-500/40 rounded-lg">
+         <img class="block mx-auto" src="./images/pentagon.png" alt="" srcset="">
+         <h1 id="pentagon-tittle" class="text-3xl pt-2 fw-bold">Pentagon</h1>
+         <p class="text-2xl pb-2">Area (A) = 0.5 *p * b</p>
+         <div class="pb-3">
+          <p>p=<span id="pentagon-p">6</span>cm, b=<span id="pentagon-b">10</span>cm</p>
+          </div>
+        <div class="flex justify-center">
+          <button id="pentagon-button" class="calculate-buttton text-2xl text-white px-6 bg-blue-800 rounded py-1 block ">Calculate</button>
+        </div>
+      </div>
+
+
+                                <!-- Ellipse card -->
+
+      <div class=" all-cards    text-center p-5 shadow shadow-blue-500/40 rounded-lg">
+        <img class="block mx-auto" src="./images/ellipse.png" alt="" srcset="">
+        <h1 id="ellipse-tittle" class="text-3xl pt-7 fw-bold">Ellipse</h1>
+        <p class="text-2xl pb-2">Area (A) = &pi; * a * b</p>
+        <div class="pb-2">
+         <p>a=<span id="ellipse-a">10</span>cm, b=<span id="ellipse-b">4</span>cm</p>
+         </div>
+       <div class="flex justify-center">
+         <button id="ellipse-button" class="calculate-buttton text-2xl text-white px-6 bg-blue-800 rounded py-1 block ">Calculate</button>
+       </div>
+     </div>
+
+    </section>
+
+                           <!-- herder section end  -->
+
+
+                         <!-- table section start-->
+<section class="mx-auto basis-1/3">
+  <h1 class="text-3xl text-center font-bold underline">Area Calculation</h1>
+
+  <div class="overflow-x-auto mt-3">
+      <table class="table w-full">
+          <thead>
+              <tr>
+                  <th>No.</th>
+                  <th>Name</th>
+                  <th>Result</th>
+                  <th>Convert</th>
+              </tr>
+          </thead>
+          <tbody id="table-body">
+
+          </tbody>
+      </table>
+  </div>
+</section>
+                      <!-- table section end--> 
+
+
+</main>
+
+
+<script src="./script.js"></script>
+
+</body>
+</html>
